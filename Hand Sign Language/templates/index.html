@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hand Gesture Recognition</title>
+</head>
+<body>
+    <h1>Hand Gesture Recognition</h1>
+    <button id="start-detection-btn">Start Hand Gesture Detection</button>
+
+    <script>
+        document.getElementById('start-detection-btn').addEventListener('click', async () => {
+            try {
+                const response = await fetch('/start_detection');
+                if (response.ok) {
+                    console.log('Hand gesture detection started.');
+                } else {
+                    console.error('Failed to start hand gesture detection.');
+                }
+            } catch (err) {
+                console.error('Error starting hand gesture detection:', err);
+            }
+        });
+    </script>
+</body>
+</html>
