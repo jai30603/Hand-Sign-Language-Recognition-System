@@ -1,1 +1,1 @@
-our Hand Sign Detection System achieves real-time gesture classification AND extends accessibLY  BY removing language barriers, this technology fosters inclusivity, particularly in employment opportunities for disabled individuals.
+copyright @sambhar_rice
